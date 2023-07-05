@@ -26,4 +26,6 @@ El fin de los contenedores es  brindan una forma estandarizada y reproducible de
 - Lugar donde se ejecutan las aplicaciones.
 - Es una agrupacion de procesos que corren en nativamente una maquina pero esta aislado del sistema.
 - Es una unidad logica,  Los procesos que se ejecutan adentro de los contenedores ven su universo como el contenedor lo define, no pueden ver mas allá del contenedor, a pesar de estar corriendo en una maquina más grande.
+# Ciclo de vida de un contenedor:
+Todos los contenedores cuando se ejecuntan tiene un proceso main y este va a tener la id 1: si este porceso se detiene por que asi se programo o se mata manualmente el contenedor se apagara 
   
