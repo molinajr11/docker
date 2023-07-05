@@ -20,3 +20,10 @@ problemas:
 # VIRTUALIZACION
 Docker en vez de usar maquinas virtuales usa contenedores
 El fin de los contenedores es  brindan una forma estandarizada y reproducible de empaquetar aplicaciones y sus dependencias, garantizando su portabilidad, aislamiento y eficiencia, y permitiendo una implementación y escalabilidad rápidas.
+# ARQUITECTURA
+![image](https://github.com/molinajr11/docker/assets/105083946/dc34cbbd-0664-4a4c-9430-ef10a52b5c53)
+# Que es un contenedor:
+- Lugar donde se ejecutan las aplicaciones.
+- Es una agrupacion de procesos que corren en nativamente una maquina pero esta aislado del sistema.
+- Es una unidad logica,  Los procesos que se ejecutan adentro de los contenedores ven su universo como el contenedor lo define, no pueden ver mas allá del contenedor, a pesar de estar corriendo en una maquina más grande.
+  
