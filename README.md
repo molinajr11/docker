@@ -28,4 +28,8 @@ El fin de los contenedores es  brindan una forma estandarizada y reproducible de
 - Es una unidad logica,  Los procesos que se ejecutan adentro de los contenedores ven su universo como el contenedor lo define, no pueden ver mas allá del contenedor, a pesar de estar corriendo en una maquina más grande.
 # Ciclo de vida de un contenedor:
 Todos los contenedores cuando se ejecuntan tiene un proceso main y este va a tener la id 1: si este porceso se detiene por que asi se programo o se mata manualmente el contenedor se apagara 
-  
+# Bind Mounts
+- Es compartir archivos, directorios datos entre contenedores y nuestra maquina.
+- une una ruta de la maquina que ejecuta el contenedor con una ruta dentro del contenedor
+- permite sacar y meter datos de un contenedor
+- riesgo acceso al contenedor a un parte de nuestro disco 
