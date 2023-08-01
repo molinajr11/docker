@@ -32,4 +32,10 @@ Todos los contenedores cuando se ejecuntan tiene un proceso main y este va a ten
 - Es compartir archivos, directorios datos entre contenedores y nuestra maquina.
 - une una ruta de la maquina que ejecuta el contenedor con una ruta dentro del contenedor
 - permite sacar y meter datos de un contenedor
-- riesgo acceso al contenedor a un parte de nuestro disco 
+- riesgo acceso al contenedor a un parte de nuestro disco
+# Volumenes 
+- Es un espacio en memoria administrado solo por docker.
+- guarda infromacion
+- solo docker puede acceder a la informacion desde un contenedor
+- si el contenedor se elimina el volumen persiste.
+- se puede compartir esta informacion entre contenedores 
