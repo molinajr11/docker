@@ -38,4 +38,12 @@ Todos los contenedores cuando se ejecuntan tiene un proceso main y este va a ten
 - guarda infromacion
 - solo docker puede acceder a la informacion desde un contenedor
 - si el contenedor se elimina el volumen persiste.
-- se puede compartir esta informacion entre contenedores 
+- se puede compartir esta informacion entre contenedores
+# Dockerfile
+- Es la base para construir contenedores apartir de imagenes.
+- Con un dockerfile se pueden construir infinitos contenedores
+- Las imagenes son una forma logica de hablar de un conjunto de capaz 🔦
+- Creacion de un dockerfile:
+🏠 FROM: ubuntu:latest  imagen base
+-> cada instruccion genera una capa
+  RUN: build time     
