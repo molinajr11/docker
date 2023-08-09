@@ -47,3 +47,35 @@ Todos los contenedores cuando se ejecuntan tiene un proceso main y este va a ten
 🏠 FROM: ubuntu:latest  imagen base
 -> cada instruccion genera una capa
   RUN: build time     
+# Docker-Compose 
+- Es un archivo que se usa para administrar multiples servicios de contenedores.
+- facilita el despliege de aplicaciones con multiples contenedores.
+# Ejemplo y contenido de un archivo compose
+version: '3'  # Versión de Docker Compose
+
+services:
+  # Servicio de la base de datos MySQL
+  db:
+    image: mysql:5.7
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mi_basededatos
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  # Servicio de la aplicación Spring Boot
+  app:
+    image: nombre_de_tu_imagen_de_spring_boot
+    container_name: mi_aplicacion
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db  # Asegura que el servicio de la base de datos esté disponible antes de iniciar la aplicación
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/mi_basededatos
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: password
+
+volumes:
+  mysql_data:  # Volumen para almacenar los datos de la base de datos
