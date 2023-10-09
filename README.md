@@ -79,3 +79,6 @@ services:
 
 volumes:
   mysql_data:  # Volumen para almacenar los datos de la base de datos
+
+  ![image](https://github.com/molinajr11/docker/assets/105083946/d72f845d-cf3f-4d7a-a254-59abeaf9656e)
+
